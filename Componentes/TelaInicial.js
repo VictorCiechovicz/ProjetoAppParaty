@@ -13,28 +13,33 @@ export default function TelaInicial(props) {
           Saiba o que visitar em paraty.
         </Text>
         <Image style={estilos.telainicialimg} source={TelaInicialImg} />
-
-        <Button
-          style={estilos.buttons}
-          title="Ver Restaurantes"
-          onPress={() => {
-            props.navigation.navigate('Restaurantes')
-          }}
-        />
-        <Button
-          style={estilos.buttons}
-          title="Ver Passeios"
-          onPress={() => {
-            props.navigation.navigate('Passeio')
-          }}
-        />
-        <Button
-          style={estilos.buttons}
-          title="Ver Hospedagem"
-          onPress={() => {
-            props.navigation.navigate('Hospedagem')
-          }}
-        />
+        <View style={estilos.boxbutton}>
+          <Button
+            title="Ver Restaurantes"
+            onPress={() => {
+              props.navigation.navigate('Restaurantes')
+            }}
+            color="#fff"
+          />
+        </View>
+        <View style={estilos.boxbutton}>
+          <Button
+            title="Ver Passeios"
+            onPress={() => {
+              props.navigation.navigate('Passeio')
+            }}
+            color="#fff"
+          />
+        </View>
+        <View style={estilos.boxbutton}>
+          <Button
+            title="Ver Hospedagem"
+            onPress={() => {
+              props.navigation.navigate('Hospedagem')
+            }}
+            color="#fff"
+          />
+        </View>
       </View>
     </View>
   )

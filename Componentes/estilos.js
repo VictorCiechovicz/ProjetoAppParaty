@@ -11,14 +11,18 @@ const estilos = StyleSheet.create({
 
   boxinicial: {
     width: 350,
-    height: 500,
+    height: 600,
     backgroundColor: '#FAD9A1',
-    justifyContent: 'center',
-    alignItems: 'center'
+    justifyContent: 'start',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderRadius:5
+    
   },
   tituloinicial: {
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginTop:10
   },
   paragrafoinicial: {
     fontSize: 20,
@@ -30,8 +34,14 @@ const estilos = StyleSheet.create({
     height: 300,
     marginBottom: 10
   },
-  buttons: {
-    marginBottom: 10
+  boxbutton: {
+    width:300,
+    height:50,
+    color:'#fff',
+    backgroundColor:'#A35709',
+    marginBottom: 10,
+    borderWidth: 1,
+    borderRadius:5
   },
   /*========TELAS======== */
   fundorestaurates: {
